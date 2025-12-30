@@ -1,12 +1,10 @@
 import pandas as pd
+from eda import auto_eda
 
-def load_data(path):
-    return pd.read_csv(path)
+df = pd.read_csv("sample_data/sales.csv")
 
-def analyze(df):
-    return df.describe()
+insights = auto_eda(df)
 
-if __name__ == "__main__":
-    df = load_data("sample_data/sales.csv")
-    print(analyze(df))
-
+print("AUTO INSIGHTS:")
+for k, v in insights.items():
+    print(k, ":", v)
