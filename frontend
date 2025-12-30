@@ -11,3 +11,5 @@
   <button>Analyze</button>
 </body>
 </html>
+<h2>Auto EDA Chart</h2>
+<img src="chart.png" width="300">
