@@ -1,1 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Omni Data AI</title>
+</head>
+<body>
+  <h1>Omni Data AI</h1>
+  <p>Upload data. Ask questions. Get insights.</p>
 
+  <input type="file" />
+  <button>Analyze</button>
+</body>
+</html>
