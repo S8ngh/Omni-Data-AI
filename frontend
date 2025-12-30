@@ -13,3 +13,14 @@
 </html>
 <h2>Auto EDA Chart</h2>
 <img src="chart.png" width="300">
+<link rel="stylesheet" href="style.css">
+
+<div class="card">
+  <h1>Omni Data AI</h1>
+  <p>Upload → Analyze → Decide</p>
+</div>
+
+<div class="card">
+  <input type="text" placeholder="Ask a business question">
+  <button>Ask AI</button>
+</div>
