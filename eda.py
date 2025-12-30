@@ -1,1 +1,19 @@
+import matplotlib.pyplot as plt
 
+def auto_eda(df):
+    insights = {}
+
+    insights["columns"] = list(df.columns)
+    insights["shape"] = df.shape
+    insights["missing_values"] = df.isnull().sum().to_dict()
+
+    # Simple plot (first numeric column)
+    numeric_cols = df.select_dtypes(include="number").columns
+    if len(numeric_cols) > 0:
+        col = numeric_cols[0]
+        plt.figure()
+        df[col].hist()
+        plt.title(f"Distribution of {col}")
+        plt.savefig("frontend/chart.png")
+
+    return insights
